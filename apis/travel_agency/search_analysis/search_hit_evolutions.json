@@ -1,0 +1,38 @@
+{
+  "title": "Search Hit Evolution API",
+  "Description": "It provides the time evolution of the number of searches per look date and per travel for a certain O&D .",
+  "url": "api/v1/search_hit_evolutions",
+  "image": "evolution.svg",
+  "inputs": [
+    {
+      "name": "market",
+      "description": "2-letter IATA country code of the point of sale"
+    },
+    {
+      "name": "origin",
+      "description": "3-letter IATA code of the departure city (optional)"
+    },
+    {
+      "name": "destination",
+      "description": "3-letter IATA code of the arrival city (optional)"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "look_date",
+      "description": "time series of number of hits by look date"
+    },
+    {
+      "name": "travel_date",
+      "description": "time series of number of hits by travel date"
+    },
+    {
+      "name": "look_weekday",
+      "description": "distribution of hits by day of week of look date"
+    },
+    {
+      "name": "travel_weekday",
+      "description": "distribution of hits by day of week of travel date"
+    }
+  ]
+}

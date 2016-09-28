@@ -1,0 +1,38 @@
+{
+  "title": "Search hit variations API",
+  "Description": "It provides the highest increase and decrease between 2 periods in a given market.",
+  "url": "api/v1/search_hit_variations",
+  "image": "variation.svg",
+  "inputs": [
+    {
+      "name": "market",
+      "description": "2-letter IATA country code of the point of sale"
+    },
+    {
+      "name": "month_a",
+      "description": "month of interest for the travel date, formatted as YYYY-MM"
+    },
+    {
+      "name": "month_b",
+      "description": "month to be compared with, as travel date formatted as YYYY-MM"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "top_up_destinations",
+      "description": "top 50 destination cities with greatest relative increase"
+    },
+    {
+      "name": "top_down_destinations",
+      "description": "top 50 destination cities with greatest relative decrease"
+    },
+    {
+      "name": "top_up_onds",
+      "description": "top 50 origin and destination pairs of cities with greatest relative increase"
+    },
+    {
+      "name": "top_down_onds",
+      "description": "top 50origin and destination pairs of cities with greatest relative decrease"
+    }
+  ]
+}
